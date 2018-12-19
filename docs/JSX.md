@@ -2,6 +2,8 @@
 
 JSX(JavaScript Xml)는 React.js에서 사용하는 UI 템플릿화를 좀 더 편하고 빠르게 도와주는 문법입니다. <br>
 
+<br>
+
 아래는 <b>JSX 문법</b>의 특징입니다.
 
 
