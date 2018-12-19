@@ -36,7 +36,8 @@ class형태로 만들어진 컴포넌트에는 꼭 render함수가 존재해야 
 
 <br>
 
-이렇게 만든 컴포넌트를 사용하려면 <code>ReactDOM.render</code> 함수를 사용해야합니다. <br>
+이렇게 만든 컴포넌트를 사용하려면 <code>ReactDOM.render</code> 함수를 사용하거나, <br>
+부모 컴포넌트에서 import 하여 사용합니다. <br>
 <code>ReactDOM.render</code> 함수의 구조는 아래와 같습니다. <br>
 
 ```
@@ -61,8 +62,27 @@ function Welcome() {
 }
 ```
 
+혹은 이렇게도 만들 수 있습니다.
+
+```
+import React from 'react';
+
+const Welcome = () => {
+    return (
+        <div>
+            <p>
+                Hello React!
+            </p>
+        </div>
+    );
+};
+
+export default Welcome;
+
+```
+
 class형태로 만들었던 컴포넌트와 동일하게 함수로 만든 컴포넌트에서도 JSX를 리턴해주어야 합니다. <br>
-그리고 마찬가지로 이렇게 만든 컴포넌트를 사용하려면 <code>ReactDOM.render</code> 함수를 사용하여 렌더링해주어야 합니다. <br>
+그리고 마찬가지로 이렇게 만든 컴포넌트의 사용법 또한 class형 컴포넌트와 동일합니다.
 
 ```
 // index.js
@@ -71,3 +91,9 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 // ReactDOM.render 함수의 첫번째 파라미터에는 렌더링할 컴포넌트를 넣어주고,
 // 두번째 파라미터에는 컴포넌트를 어떤 DOM에 그려줄 지 정해줍니다.
 ```
+
+<br><br>
+
+함수형 컴포넌트와 class형 컴포넌트의 주요 차이점은 함수형 컴포넌트에는 state와 LifeCycle이 빠져있다는 점입니다. <br>
+그래서 함수형 컴포넌트 초기 마운트가 아주 미세하게 빠르고 메모리 자원을 덜 사용합니다. <br>
+하지만 아주 미세한 차이이니, 컴포넌트를 무수히 많이 렌더링 해야하는 환경이 아니라면 성능적으로 큰 차이는 없습니다. <br>

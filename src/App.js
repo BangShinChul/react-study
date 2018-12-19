@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyName from './MyName';
+import Counter from './Counter';
 
 class App extends Component {
   render() {
@@ -12,9 +14,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <p>
-            Hello React!
-          </p>
+          <MyName name="React"/> {/* MyName 컴포넌트에 name이라는 변수명으로 "React"를 props로 전달 */}
+          <Counter />
+          <br/>
           <a
             className="App-link"
             href="https://reactjs.org"

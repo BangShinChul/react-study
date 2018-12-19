@@ -90,3 +90,20 @@ JSX(JavaScript Xml)는 React.js에서 사용하는 UI 템플릿화를 좀 더 �
   <div class="hello"> (x)
   <div className="hello"> (o)
 ```
+
+7. JSX 태그에 이벤트를 설정할 때 camelCase로 설정해 주어야 합니다. <br> 또한 이벤트에 전달해주는 값은 무조건 <b>함수</b>여야 합니다.
+
+```
+<button onclick={this.handleIncrease}>+</button> (x)
+<button onClick={this.handleIncrease}>+</button> (o)
+
+
+<button onClick={this.handleIncrease()}>+</button> (x) 
+/*
+이런식으로 하게되면 렌더링을 할 때 마다 해당 함수가 호출이 됩니다. 
+그렇게되면 렌더링 -> 함수 호출 -> setState -> 렌더링 -> 함수 호출 -> setState -> 렌더링 ... 
+위처럼 무한 반복이 되어버리기 때문에 항상 주의해야합니다.
+*/
+
+<button onClick={this.handleIncrease}>+</button> (o)
+```
