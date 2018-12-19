@@ -91,6 +91,8 @@ JSX(JavaScript Xml)는 React.js에서 사용하는 UI 템플릿화를 좀 더 �
   <div className="hello"> (o)
 ```
 
+<br>
+
 7. JSX 태그에 이벤트를 설정할 때 camelCase로 설정해 주어야 합니다. <br> 또한 이벤트에 전달해주는 값은 무조건 <b>함수</b>여야 합니다.
 
 ```

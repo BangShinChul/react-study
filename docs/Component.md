@@ -97,3 +97,28 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 함수형 컴포넌트와 class형 컴포넌트의 주요 차이점은 함수형 컴포넌트에는 state와 LifeCycle이 빠져있다는 점입니다. <br>
 그래서 함수형 컴포넌트 초기 마운트가 아주 미세하게 빠르고 메모리 자원을 덜 사용합니다. <br>
 하지만 아주 미세한 차이이니, 컴포넌트를 무수히 많이 렌더링 해야하는 환경이 아니라면 성능적으로 큰 차이는 없습니다. <br>
+
+<br><br>
+
+### Component's LifeCycle
+
+컴포넌트가 브라우저에 나타나기 전, 후에 호출되는 API들이 있습니다.
+- constructor
+- componentWillMount
+- componentDidMount
+
+<br>
+
+컴포넌트의 업데이트는 props의 변화, state의 변화에 따라 결정됩니다.
+업데이트가 되기 전, 후에 호출되는 API는 아래와 같습니다.
+- componentWillReceiveProps
+- static getDerivedStateFromProps()
+- shouldComponentUpdate
+- componentWillUpdate
+- getSnapshotBeforeUpdate()
+- componentDidUpdate
+
+<br>
+
+컴포넌트가 더이상 필요하지 않게 되면 단 하나의 API가 호출됩니다.
+- componentWillUnmount

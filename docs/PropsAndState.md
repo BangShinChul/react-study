@@ -185,7 +185,7 @@ class Counter extends Component {
             <div>
                 <h1>카운터</h1>
                 <div>값: {this.state.number}</div> {/* this.state 를 이용하여 state 값을 조회할 수 있습니다.  */}
-                <button onClick={this.handleIncrease}>+</button> {/* this.state 를 이용하여 state 값을 조회할 수 있습니다.  */}
+                <button onClick={this.handleIncrease}>+</button>
                 <button onClick={this.handleDecrease}>-</button>
             </div>
         );
