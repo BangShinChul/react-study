@@ -7,8 +7,11 @@
 
 <br>
 
-<a href="./docs">문서</a>
-<a href="./CHANGELOG.md">변경 사항</a>
+<a href="./docs">공부 정리 문서</a> 
+
+<br>
+
+<a href="./CHANGELOG.md">프로젝트 변경 사항</a>
 
 <br>
 
