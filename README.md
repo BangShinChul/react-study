@@ -46,7 +46,7 @@ success Saved lockfile.
 ✨  Done in 15.83s.
 
 
-& yarn start # react.js application start by yarn
+$ yarn start # react.js application start by yarn
 
 Compiled successfully!
 
