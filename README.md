@@ -7,6 +7,11 @@
 
 <br>
 
+<a href="./docs">문서</a>
+<a href="./CHANGELOG.md">변경 사항</a>
+
+<br>
+
 기본적인 개발환경은 create-react-app 라이브러리로 구축하였습니다.
 
 <br>
