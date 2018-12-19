@@ -1,3 +1,34 @@
+### React.js Study Project
+> 이 프로젝트는 React.js 스터디 프로젝트 입니다.
+
+<br>
+
+기본적인 개발환경은 create-react-app 라이브러리로 구축하였습니다.
+
+<br>
+
+<b>create-react-app 설치하기</b>
+
+기본적으로 Node와 npm이 설치되어 있다는 가정하에 아래의 명령어를 터미널에 입력해줍니다.
+
+```
+npm install -g create-react-app
+
+```
+
+create-react-app 라이브러리 설치 시 글로벌 패키지로 설치해주세요. Node 버젼은 4.x 이상이어야 합니다.
+
+<br>
+
+<b>App 생성하기</b>
+
+```
+create-react-app hello-world
+
+```
+
+***
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
