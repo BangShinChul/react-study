@@ -1,6 +1,10 @@
 ### React.js Study Project
 > 이 프로젝트는 React.js 스터디 프로젝트 입니다.
 
+참고
+- https://velopert.com/3626
+- https://velopert.com/3480
+
 <br>
 
 기본적인 개발환경은 create-react-app 라이브러리로 구축하였습니다.
@@ -13,7 +17,6 @@
 
 ```
 npm install -g create-react-app
-
 ```
 
 create-react-app 라이브러리 설치 시 글로벌 패키지로 설치해주세요. Node 버젼은 4.x 이상이어야 합니다.
@@ -24,52 +27,34 @@ create-react-app 라이브러리 설치 시 글로벌 패키지로 설치해주�
 
 ```
 create-react-app hello-world
-
 ```
 
 ***
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### React.js 어플리케이션 실행 방법
 
-## Available Scripts
+```
+$ yarn #connecting yarn
 
-In the project directory, you can run:
+yarn install v1.12.3
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[#################################################################################-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 348/1283^R
+[3/4] 🔗  Linking dependencies...
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+✨  Done in 15.83s.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+& yarn start # react.js application start by yarn
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Compiled successfully!
 
-### `npm test`
+You can now view hello-world in the browser.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.1.3:3000/
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+```
