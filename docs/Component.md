@@ -108,6 +108,8 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 
 컴포넌트가 브라우저에 나타나기 전, 후에 호출되는 API들이 있습니다.
 
+<br>
+
 ```
 constructor(props) {
     super(props);
@@ -115,6 +117,8 @@ constructor(props) {
 ```
 - constructor
     - 컴포넌트 생성자 함수입니다. 컴포넌트가 새로 만들어질 때마다 함수가 호출됩니다.
+
+<br>
 
 ```
 componentWillMount() {
@@ -124,6 +128,8 @@ componentWillMount() {
 - componentWillMount
     - 컴포넌트가 화면에 나가기 직전에 호출되는 API입니다. 현재는 별로 사용되지 않습니다.
     - <b>React.js v16.3 이후 해당 API가 deprecated 되었습니다.</b>
+
+<br>
 
 ```
 componentDidMount() {
@@ -139,9 +145,12 @@ componentDidMount() {
     DOM의 속성을 읽거나 직접 변경하는 작업을 진행합니다.
 
 <br>
+<br>
 
 컴포넌트의 업데이트는 props의 변화, state의 변화에 따라 결정됩니다.
 업데이트가 되기 전, 후에 호출되는 API는 아래와 같습니다.
+
+<br>
 
 ```
 componentWillReceiveProps(nextProps) {
@@ -155,6 +164,8 @@ componentWillReceiveProps(nextProps) {
     - 이 때 nextProps가 아닌 this.props를 조회하면 업데이트 되기 전의 props를 조회합니다.
     - <b>React.js v16.3 이후 해당 API가 deprecated 되었습니다.</b>
     - React.js v16.3 이후부터는 <code>UNSAFE_componentWillReceiveProps()</code>라는 이름으로 사용됩니다.
+
+<br>
 
 ```
 static getDerivedStateFromProps(nextProps, prevState) {
@@ -174,6 +185,8 @@ static getDerivedStateFromProps(nextProps, prevState) {
     - React.js v16.3 이후에 만들어진 새로운 라이프사이클 API 입니다.
     - 이 API는 props로 받아온 값을 state로 동기화 하는 작업을 해줘야 하는 경우에 사용합니다.
 
+<br>
+
  ```
 shouldComponentUpdate(nextProps, nextState) {
     // return false 를 하면 업데이트를 안합니다.
@@ -189,6 +202,8 @@ shouldComponentUpdate(nextProps, nextState) {
     - <code>shouldComponentUpdate</code>에서 계산을 실행하는 것은 성능과 노력면에서 비용이 많이들 수 있으므로 그만한 가치가 있는지 확인해야합니다. <br>
     <a target="_blank" href="https://reactjs.org/docs/perf.html">React‘s Performance Tools</a>를 사용하여 <code>shouldComponentUpdate</code> 사용 전후에 낭비되는 사이클 수를 확인하는 것이 좋습니다. 아주 간단한 사용법이 있습니다.
 
+<br>
+
 ```
 componentWillUpdate(nextProps, nextState) {
 
@@ -199,6 +214,8 @@ componentWillUpdate(nextProps, nextState) {
     - 여기에선 주로 애니메이션 효과를 초기화하거나, 이벤트 리스너를 없애는 작업을 합니다.
     - 이 함수가 호출되고난 다음에는 <code>render()</code>가 호출됩니다.
     - <b>React.js v16.3 이후 해당 API가 deprecated 되었습니다.</b>
+
+<br>
 
 ```
 getSnapshotBeforeUpdate(prevProps, prevState) {
@@ -236,6 +253,8 @@ componentDidUpdate(prevProps, prevState, snapshot) {
         - <code>componnentDidUpdate</code>
     - 이 API를 통해서 DOM 변화가 일어나기 직전의 DOM 상태를 가져오고, <br> 여기서 리턴하는 값은 <code>componentDidUpdate</code>에서 3번째 파라미터로 받아올 수 있게 됩니다.
 
+<br>
+
 ```
 componentDidUpdate(prevProps, prevState, snapshot) {
 
@@ -247,7 +266,7 @@ componentDidUpdate(prevProps, prevState, snapshot) {
     - 파라미터를 통해 이전의 값인 prevProps, prevState를 조회할 수 있습니다.
     - <code>getSnapshotBeforeUpdate</code>에서 반환한 snapshot 값은 세번째 파라미터로 받아옵니다.
 
-<br>
+<br><br>
 
 컴포넌트가 더이상 필요하지 않게 되면 단 하나의 API가 호출됩니다.
 
