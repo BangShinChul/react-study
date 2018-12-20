@@ -102,6 +102,10 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 
 ### Component's LifeCycle
 
+![react-js-life-cycle](https://user-images.githubusercontent.com/26675063/50258850-e7843800-0444-11e9-83ba-a7d973606120.jpeg)
+
+<br>
+
 컴포넌트가 브라우저에 나타나기 전, 후에 호출되는 API들이 있습니다.
 - constructor
     - 컴포넌트 생성자 함수입니다. 컴포넌트가 새로 만들어질 때마다 함수가 호출됩니다.
