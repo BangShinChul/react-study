@@ -104,8 +104,15 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 
 컴포넌트가 브라우저에 나타나기 전, 후에 호출되는 API들이 있습니다.
 - constructor
+    - 컴포넌트 생성자 함수입니다. 컴포넌트가 새로 만들어질 때마다 함수가 호출됩니다.
 - componentWillMount
+    - 컴포넌트가 화면에 나가기 직전에 호출되는 API입니다. 현재는 별로 사용되지 않습니다.
+    - React.js v16.3에서는 해당 API가 deprecated 되었습니다.
 - componentDidMount
+    - 컴포넌트가 화면에 나타나게 되었을 때 호출되는 API 입니다.
+    - 여기에선 주로 D3, masonry처럼 DOM을 사용해야하는 외부라이브러리 연동을 하거나, <br> 
+    해당 컴포넌트에서 필요로하는 데이터를 요청하기 위해 axios, fetch 등의 라이브러리를 통하여 HTTP Request를 하거나, <br> 
+    DOM의 속성을 읽거나 직접 변경하는 작업을 진행합니다.
 
 <br>
 
@@ -122,3 +129,6 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 
 컴포넌트가 더이상 필요하지 않게 되면 단 하나의 API가 호출됩니다.
 - componentWillUnmount
+
+<br>
+
